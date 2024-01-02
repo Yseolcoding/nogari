@@ -4,10 +4,7 @@ import com.example.springboot.Controller.Request.LoginRequest;
 import com.example.springboot.Controller.Request.UserSignupRequest;
 import com.example.springboot.Service.UserService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 
@@ -31,5 +28,8 @@ public class LoginController {
         return userService.login(loginRequest);
     }
 
+    @GetMapping("/myInfo")
+    public String myInfo(@RequestBody @Valid) {
 
+    }
 }
