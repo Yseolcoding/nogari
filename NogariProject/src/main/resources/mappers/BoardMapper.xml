@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="nogari.system.ntbd.BoardMapper">
 
-    <select id="getBoardList" resultType="com.api.board.domain.Board">
+    <select id="getBoardList" resultType="nogari.system.ntbd.domain.entity.Board">
 
         SELECT T1.*
         FROM (

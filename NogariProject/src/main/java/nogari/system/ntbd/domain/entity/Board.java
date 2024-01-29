@@ -1,4 +1,4 @@
-package nogari.system.ntbd;
+package nogari.system.ntbd.domain.entity;
 
 import java.sql.Date;
 
