@@ -98,6 +98,7 @@ public class NtbdController {
      */
     @PostMapping("/delete-multi")
     public ResponseEntity<String> boardsRemove(@RequestBody List<String> ntbdCds){
+
         String result = ntbdService.deleteBoards(ntbdCds);
 
         return new ResponseEntity<>(result, HttpStatus.OK);
